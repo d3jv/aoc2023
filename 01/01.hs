@@ -1,6 +1,6 @@
 import System.IO
 import Data.Char
-import Data.List.Extra hiding (splitOn, reverse)
+import Data.List.Extra hiding (reverse)
 import Data.Maybe
 
 main = do handle <- openFile "input" ReadMode
