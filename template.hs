@@ -1,12 +1,12 @@
 import System.IO
-import Data.List.Split
 
 main = do handle <- openFile "input" ReadMode
           contents <- hGetContents handle
+          let _lines = lines contents
           putStr "Task1: "
-          (putStr . show . task1) (splitOn "\n" contents)
+          (putStr . show . task1) _lines
           putStr "\nTask2: "
-          (putStr . show . task2) (splitOn "\n" contents)
+          (putStr . show . task2) _lines
           putStr "\n"
           return ()
 
